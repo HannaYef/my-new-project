@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card mt-5 col-6 p-3">
+        <div class="row col-12">
+          <div class="col-2">
+            <p class="cities">Lisbon</p>
+          </div>
+          <div class="col-2">
+            <p class="cities">Kyiv</p>
+          </div>
+          <div class="col-2">
+            <p class="cities">Madrid</p>
+          </div>
+          <div class="col-2">
+            <p class="cities">New York</p>
+          </div>
+          <div class="col-sm-3">
+            <p class="cities">Manchester</p>
+          </div>
+        </div>
+   <form id="search-form">
+          
+   <input type="search" placeholder="Find your city" id="cityName">
+  
+<button type="submit" class="btn btn-secondary btn-sm">Search</button>
+<button type="submit" class="btn btn-success" id="button_location">Current</button>
+
+
+
+</form>
+
+        <div class="card-body">
+          <div class="row">
+            <div class="col-4">
+              <h2 id="city"><strong>New York</strong></h2>
+              <p class="today" id="today-time">Thursday 14:14</p>
+              <p class="today">Cloudy</p>
+            </div>
+            <div class="col-2">
+              <img  class="image" src="images/sun.png" width="100px">
+            </div>
+            <div class="col-3">
+              <span class="temperature" id="temperature">23°</span><span class="units"></span>
+            <a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a>
+
+              <p class="today">
+                Precipitation: 53%
+              </p>
+              <p class="today">
+                Wind: 6km/h
+              </p>
+            </div>
+                 </div>
+
+        <div class="row pb-0 pt-1 col-12">
+          <div class="col-2">
+            <p class="days">Fri</p>
+            <img class="weather-pic"src="images/rain.png" width="50px">
+            <p class="temp">20°C</p>
+          </div>
+          <div class="col-2">
+            <p class="days">Sat</p>
+             <img class="weather-pic" src="images/sun_cloud.png" width="50px">
+            <p class="temp">19°C</p>
+          </div>
+          <div class="col-2">
+            <p class="days">Sun</p>
+            <img src="images/sun_cloud.png" width="50px">
+            <p class="temp">20°C</p>
+          </div>
+          <div class="col-2">
+            <p class="days">Mon</p>
+            <img src="images/sun.png" width="50px" class="image">
+            <p class="temp">21°C</p>
+          </div>
+          <div class="col-2">
+            <p class="days">Tue</p>
+            <img src="images/rain.png" width="50px">
+            <p class="temp">19°C</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
